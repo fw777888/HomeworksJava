@@ -12,16 +12,16 @@ import java.util.Scanner;
 public class Bday {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-//        scanner.useDelimiter("\\.");
+комиты удаляем //         scanner.useDelimiter("\\.");
 
-        System.out.println("Введите дату рождения в формате dd.mm.yyyy");
+        System.out.println("Введите дату рождения в формате dd.mm.yyyy"); отступы между методами и обьявлением переменных
         String bDate = scanner.nextLine();
         String[] parts = bDate.split("\\.");
 
-        if (parts.length != 3) {
+        if (parts.length != 3) { 
             System.out.println("некорректный формат ввода даты");
             return;
-        }
+        } отступы
         int bDay, bMonth, bYear;
 
         bDay = Integer.parseInt(parts[0]);
@@ -32,7 +32,7 @@ public class Bday {
         int currentMonth = 10;
         int currentYear = 2023;
 
-        if (bDay > 0 && bDay < 31 && bMonth > 0 && bMonth < 13 && bYear <= currentYear ) {
+        if (bDay > 0 && bDay < 31 && bMonth > 0 && bMonth < 13 && bYear <= currentYear ) { слишком сложно упрости на шаги
             System.out.println("дата рождения " + bDay + "." + bMonth + "." + bYear);
         } else {
             System.out.println("некорректная дата");
@@ -47,7 +47,7 @@ public class Bday {
 
         int daysUntilCurrentDate =
                 yearsUntilCurrentYear * daysInYear
-                        + monthsUntilEndOfYear * 30 + daysUntilEndOfMonth - daysFromCurrentDateToEndOfCurrentYear;
+                        + monthsUntilEndOfYear * 30 + daysUntilEndOfMonth - daysFromCurrentDateToEndOfCurrentYear; на шаги
 
         System.out.println("прошло " + daysUntilCurrentDate + " дней");
     }
