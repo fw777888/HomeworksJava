@@ -3,7 +3,7 @@ package Lesson1;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) { убери комментарии и попарвь отступы, отступ нужен не после метода а после класса
 
         System.out.print("   J    a   v     v  a\n");
         System.out.print("   J   a a   v   v  a a\n");
