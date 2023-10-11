@@ -2,7 +2,7 @@ package Lesson1;
 
 import java.util.Scanner;
 
-public class EqualsLessMore { отступы везде поправь
+public class EqualsLessMore { //отступы везде поправь
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("сравнение двух чисел");

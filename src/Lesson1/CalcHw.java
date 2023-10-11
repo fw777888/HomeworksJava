@@ -7,18 +7,19 @@ package Lesson1;
 
 import java.util.Scanner;
 
-public class CalcHw { отступ
+public class CalcHw { //отступ
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); отступы
-        System.out.println("Введите первое число в диапазоне от 1 до 9");
-        int num1 = scanner.nextInt();
-        System.out.println("Введите второе число в диапазоне от 1 до 9");
-        int num2 = scanner.nextInt();
-        System.out.println("Введите арифметический оператор (* / + -) ");отступы
-        if (num1 > 9 || num1 < 1 || num2 > 9 || num2 < 1) {
-            System.out.println("не корректно введены данные, числа должны быть в диапазоне от 1 до 9");
-        }
-        scanner.nextLine();отступы
+
+    Scanner scanner = new Scanner(System.in); //отступы
+    System.out.println("Введите первое число в диапазоне от 1 до 9");
+    int num1 = scanner.nextInt();
+    System.out.println("Введите второе число в диапазоне от 1 до 9");
+    int num2 = scanner.nextInt();
+    System.out.println("Введите арифметический оператор (* / + -) ");//отступы
+    if (num1 > 9 || num1 < 1 || num2 > 9 || num2 < 1) {
+        System.out.println("не корректно введены данные, числа должны быть в диапазоне от 1 до 9");
+    }
+    scanner.nextLine();//отступы
         String arifOperator = scanner.nextLine();
         int result = 0;
         if (arifOperator.equals("+")) {
@@ -32,7 +33,7 @@ public class CalcHw { отступ
         } else {
             System.out.println("Введите корректный арифметический опереатор");
         }
-        scanner.close();отступы и оберни его в try resource
+        scanner.close();//отступы и оберни его в try resource
         System.out.println("результат равен " + result);
     }
 }
